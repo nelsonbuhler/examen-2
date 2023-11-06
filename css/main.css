@@ -5,15 +5,23 @@
 :root {
   --gold: #c9a445;
   --gray: #ededed;
-  --nav-font: font-size: 24px; font-weight: 300;
-  --text-font: font-size: 20px; font-weight: 400;
-  --link-font: font-size: 20px; font-weight: 600;
-  --footer-font: font-size: 28px; font-weight: 600;
-  --nav-phone-font: font-size: 28px; font-weight: 400;
-  --text-phone-font: font-size: 16px; font-weight: 700;
-  --footer-phone-font: font-size: 20px; font-weight: 500;
-  --burger-a-font: font-size: 22px; font-weight: 500;
-  --font: font-family: 'Quicksand', sans-serif;
+  --nav-font-weight: 300;
+  --nav-font-size: 24px;
+  --text-font-weight: 400;
+  --text-font-size: 20px;
+  --link-font-weight: 600;
+  --link-font-size: 20px;
+  --footer-font-weight: 600;
+  --footer-font-size: 28px;
+  --nav-phone-font-weight: 400;
+  --nav-phone-font-size: 28px;
+  --text-phone-font-weight: 700;
+  --text-phone-font-size: 16px;
+  --footer-phone-font-weight: 500;
+  --footer-phone-font-size: 20px;
+  --burger-a-font-weight: 500;
+  --burger-a-font-size: 22px;
+  --font-family: "Quicksand", sans-serif;
 }
 
 /* ====================================
@@ -40,7 +48,7 @@ body {
 }
 
 p {
-    font-family: var(--font);
+  font-family: var(--font-family);
 }
 
 a {

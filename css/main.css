@@ -3,6 +3,17 @@
 // ==================================== */
 
 :root {
+  --gold: #c9a445;
+  --gray: #ededed;
+  --nav-font: font-size: 24px; font-weight: 300;
+  --text-font: font-size: 20px; font-weight: 400;
+  --link-font: font-size: 20px; font-weight: 600;
+  --footer-font: font-size: 28px; font-weight: 600;
+  --nav-phone-font: font-size: 28px; font-weight: 400;
+  --text-phone-font: font-size: 16px; font-weight: 700;
+  --footer-phone-font: font-size: 20px; font-weight: 500;
+  --burger-a-font: font-size: 22px; font-weight: 500;
+  --font: font-family: 'Quicksand', sans-serif;
 }
 
 /* ====================================
@@ -26,6 +37,10 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+}
+
+p {
+    font-family: var(--font);
 }
 
 a {

@@ -57,6 +57,8 @@ header {
   background-image: url("../img/restaurant-bg.jpg");
   background-size: cover;
   padding-bottom: 10px;
+  padding-top: 30px;
+  height: 100vh;
 }
 
 p {
@@ -117,6 +119,10 @@ video {
   font-weight: 600;
   font-size: 23px;
   padding: 10px 30px;
+}
+
+.phone-button {
+  margin-top: 215px;
 }
 
 @keyframes italia-mama {

@@ -28,6 +28,11 @@
 // reset rules
 // ==================================== */
 
+@font-face {
+  font-family: "miama";
+  src: url("../font/miama.woff2") format("woff2");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,10 +50,22 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  font-family: var(--font-family);
+}
+
+header {
+  background-image: url("../img/restaurant-bg.jpg");
+  background-size: cover;
+  padding-bottom: 10px;
 }
 
 p {
   font-family: var(--font-family);
+}
+
+h2 {
+  font-family: "miama";
+  text-transform: capitalize;
 }
 
 a {
@@ -62,16 +79,53 @@ video {
   vertical-align: middle;
 }
 
-.row + .row {
-  margin-top: 16px;
+.title-box {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+.title-box .title {
+  width: 279px;
+  height: 55px;
+}
+
+.italia-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.italia {
+  width: 145.455px;
+  height: 145.455px;
+  position: relative;
+  margin: 40px 20px;
+  animation-name: italia-mama;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.button {
+  background-color: var(--gold);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 23px;
+  padding: 10px 30px;
+}
+
+@keyframes italia-mama {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 720px) {

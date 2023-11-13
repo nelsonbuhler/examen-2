@@ -62,9 +62,22 @@ header {
 }
 
 footer {
-  background-image: url(../img/restaurant-footer-bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+    url(../img/restaurant-footer-bg.jpg);
   background-size: cover;
   color: white;
+  padding: 20px;
+}
+
+footer .logo-footer {
+  padding: 20px;
+}
+
+footer a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 20px 0px;
 }
 
 p {
@@ -78,7 +91,8 @@ h2 {
   font-weight: 400;
   text-align: center;
   text-decoration: underline 1px;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 a {
@@ -142,6 +156,7 @@ video {
   font-weight: 600;
   font-size: 20px;
   padding: 10px 30px;
+  margin-top: 50px;
 }
 
 .phone-button {
@@ -152,10 +167,19 @@ video {
   background-color: var(--gray);
 }
 
+.cut-img {
+  margin-top: -150px;
+}
+
 .carte {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.carte-bg {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.724);
 }
 
 .carte .text {
@@ -180,15 +204,18 @@ video {
   box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
   border-radius: 11px 11px 0px 0px;
   margin: 15px;
+  width: 176px;
+  height: 163px;
 }
 
 .card-container {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 
 .screen {
-  height: 100vh;
+  height: 75vh;
 }
 
 .story-container {
@@ -200,13 +227,17 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/castel.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/castel.jpg);
   background-size: cover;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
   width: 324px;
   height: 394px;
+  margin: 60px;
+  margin-right: 0px;
 }
 
 .footer-box-info {
@@ -217,11 +248,26 @@ video {
 .footer-box-link {
   display: flex;
   justify-content: space-evenly;
+  margin: 60px 0px 25px -50px;
+}
+
+.footer-link {
+  margin-right: -50px;
 }
 
 @media (max-width: 720px) {
   .card {
     width: 176px;
+  }
+
+  .card-long {
+    height: 185;
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    padding-bottom: 50px;
   }
 }
 

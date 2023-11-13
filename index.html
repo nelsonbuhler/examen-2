@@ -52,38 +52,42 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container grey-bg">
+        <hr class="special-space" />
         <div class="row">
           <div class="col"><h2>les plats et boissons</h2></div>
         </div>
         <div class="row">
           <div class="col-3 col-md-2">
-            col-1 <img src="img/pizza-shot-p-1.png" alt="photo de pizza p1" />
+            <img src="img/pizza-shot-p-1.png" alt="photo de pizza p1" />
           </div>
-          <div class="col-6 col-md-4 order-md-1">
-            <p>Aperçu de la carte</p>
-            <a href="">Voir la carte</a>
+          <div class="col-6 col-md-4 order-md-1 carte">
+            <p class="text">Aperçu de la carte</p>
+            <p class="link">voir la carte</p>
           </div>
           <div class="col-3 order-md-3 col-md-2">
-            col-4
             <img src="img/coktail-shot-p-2.png" alt="photo de cocktail p2" />
           </div>
-          <div class="col-3 offset-3 offset-md-0 col-md-2">
-            col-2 <img src="img/pizza-shot-p-2.png" alt="photo de pizza p2" />
+          <div class="col-3 offset-3 offset-md-0 col-md-2 cut-img">
+            <img src="img/pizza-shot-p-2.png" alt="photo de pizza p2" />
           </div>
-          <div class="col-3 order-md-2 col-md-2">
-            col-3
+          <div class="col-3 order-md-2 col-md-2 cut-img">
             <img src="img/coktail-shot-p-1.png" alt="photo de cocktail p1" />
           </div>
         </div>
       </div>
       <div class="container">
+        <hr />
         <div class="row">
           <div class="col"><h2>les activités</h2></div>
         </div>
-        <div class="row">
-          <div class="col-6 col-md-3">
-            <img src="img/pizza-acro.jpg" alt="photo de pizza acrobatique" />
+        <div class="row card-container">
+          <div class="col-6 col-md-3 card">
+            <img
+              class="card-img"
+              src="img/pizza-acro.png"
+              alt="photo de pizza acrobatique"
+            />
             <img class="desktop-disapear" src="img/little-arrow.svg" />
             <h3>Pizza acrobatique</h3>
             <p class="phone-disapear">
@@ -96,8 +100,12 @@
             </p>
             <a class="phone-disapear" href="">Voir plus</a>
           </div>
-          <div class="col-6 col-md-3">
-            <img src="img/playground.jpg" alt="photo de plage de jeux" />
+          <div class="col-6 col-md-3 card">
+            <img
+              class="card-img"
+              src="img/playground.png"
+              alt="photo de plage de jeux"
+            />
             <img class="desktop-disapear" src="img/little-arrow.svg" />
             <h3>Espace de jeux</h3>
             <p class="phone-disapear">
@@ -110,9 +118,10 @@
             </p>
             <a class="phone-disapear" href="">Voir plus</a>
           </div>
-          <div class="col-6 col-md-3 offset-md-3">
+          <div class="col-6 col-md-3 offset-md-3 card">
             <img
-              src="img/pasta-workshop.jpg"
+              class="card-img"
+              src="img/pasta-workshop.png"
               alt="photo d'atelier colier de pate"
             />
             <img class="desktop-disapear" src="img/little-arrow.svg" />
@@ -128,34 +137,38 @@
             <a class="phone-disapear" href="">Voir plus</a>
           </div>
         </div>
+        <hr />
       </div>
-      <div class="container">
+      <div class="container grey-bg">
         <div class="row">
           <div class="col phone-disapear">
             image <img src="img/castel.jpg" alt="photob de chateaux" />
           </div>
           <div class="col-md-6 col-12"><h2>Des siècles de tradition</h2></div>
         </div>
-        <div class="row">
-          <div class="col-10 offset-2 col-md-4 offset-md-7">
-            <p>
-              L’histoire de la culture italienne peut être explorée par le biais
-              d’idées, d’axes problématiques et de questions alimentant les
-              débats et les polémiques depuis plusieurs décennies dans le pays.
-            </p>
-            <img class="desktop-disapear" src="img/arrow.png" />
-            <p class="phone-disapear">
-              Afin d’en rendre compte, le choix a été fait, à la fois par souci
-              de clarté et d’efficacité, de mentionner sept des pistes de
-              recherche les plus défrichées par les chercheurs transalpins.
-            </p>
-            <p class="phone-disapear">
-              Cette sélection, élaborée par l’une des meilleures spécialistes
-              italiennes du sujet, a surtout l’ambition de fournir des
-              références historiographiques au lecteur français, pour qu’il
-              puisse s’y retrouver dans le maquis des notions, des thèmes, des
-              problèmes et des auteurs convoqués.
-            </p>
+        <div class="story-container">
+          <div class="row story-link">
+            <div class="col-10 offset-2 col-md-4 offset-md-7">
+              <p>
+                L’histoire de la culture italienne peut être explorée par le
+                biais d’idées, d’axes problématiques et de questions alimentant
+                les débats et les polémiques depuis plusieurs décennies dans le
+                pays.
+              </p>
+              <img class="desktop-disapear" src="img/arrow.png" />
+              <p class="phone-disapear">
+                Afin d’en rendre compte, le choix a été fait, à la fois par
+                souci de clarté et d’efficacité, de mentionner sept des pistes
+                de recherche les plus défrichées par les chercheurs transalpins.
+              </p>
+              <p class="phone-disapear">
+                Cette sélection, élaborée par l’une des meilleures spécialistes
+                italiennes du sujet, a surtout l’ambition de fournir des
+                références historiographiques au lecteur français, pour qu’il
+                puisse s’y retrouver dans le maquis des notions, des thèmes, des
+                problèmes et des auteurs convoqués.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -165,10 +178,12 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <img src="img/logo.svg" />
-            <a href="">LaCasaDellaPizza@protonmail.com</a
-            ><a href="">078 405 83 27</a><a href="">Rte de la pizza 12</a>
+            <div class="footer-box-info">
+              <a href="">LaCasaDellaPizza@protonmail.com</a
+              ><a href="">078 405 83 27</a><a href="">Rte de la pizza 12</a>
+            </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 footer-box-link">
             <img src="img/e-mail.svg" alt="logo e-mail" />
             <img src="img/instagram.svg" alt="logo instagram" />
             <img src="img/twitter.svg" alt="logo twitter" />

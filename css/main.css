@@ -117,7 +117,6 @@ video {
 }
 
 .title-box {
-  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -144,35 +143,12 @@ video {
   animation-timing-function: linear;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  background-color: var(--gold);
-  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
-  border-radius: 13px;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 10px 30px;
-  margin-top: 50px;
-}
-
 .phone-button {
   margin-top: 215px;
 }
 
 .grey-bg {
   background-color: var(--gray);
-}
-
-.cut-img {
-  margin-top: -150px;
-}
-
-.cut-img-scd {
-  margin-top: -50px;
 }
 
 .carte {
@@ -187,7 +163,6 @@ video {
 
 .carte-bg {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.724);
   margin: 20px -35px;
   padding: 25px;
 }
@@ -212,7 +187,6 @@ video {
 }
 
 .card {
-  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
   margin-bottom: 15px;
 }
 
@@ -220,10 +194,6 @@ video {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 25px;
-}
-
-.screen {
-  height: 700px;
 }
 
 .story-container {
@@ -235,10 +205,6 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../img/castel.jpg);
-  background-size: cover;
-  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -272,12 +238,6 @@ video {
   padding-top: 0px;
 }
 
-@media (max-width: 720px) {
-}
-
-@media (max-width: 360px) {
-}
-
 /*
 .cut-img {
   position: absolute;
@@ -295,14 +255,68 @@ video {
   }
 }
 
-@media (max-width: 720px) {
-  .phone-disapear {
-    display: none;
+@media (min-width: 720px) {
+  h3 {
+    color: var(--gold);
   }
 }
 
 @media (min-width: 720px) {
   .desktop-disapear {
     display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .phone-disapear {
+    display: none;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gold);
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 50px;
+  }
+
+  .title-box {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (max-width: 720px) {
+  .story-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/castel.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+
+  .card {
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  }
+
+  .screen {
+    height: 700px;
+  }
+
+  .cut-img {
+    margin-top: -150px;
+  }
+
+  .cut-img-scd {
+    margin-top: -50px;
+  }
+
+  .carte-bg {
+    background-color: rgba(255, 255, 255, 0.724);
   }
 }

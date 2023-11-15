@@ -74,10 +74,10 @@ footer .logo-footer {
 }
 
 footer a {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   text-decoration: none;
-  margin: 20px 0px;
+  margin: 15px 0px;
 }
 
 p {
@@ -171,15 +171,25 @@ video {
   margin-top: -150px;
 }
 
+.cut-img-scd {
+  margin-top: -50px;
+}
+
 .carte {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.carte-title {
+  margin-bottom: 120px;
+}
+
 .carte-bg {
   position: relative;
   background-color: rgba(255, 255, 255, 0.724);
+  margin: 20px -35px;
+  padding: 25px;
 }
 
 .carte .text {
@@ -187,6 +197,7 @@ video {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .carte .link {
@@ -197,15 +208,12 @@ video {
 }
 
 .special-space {
-  padding-top: 20px;
+  padding-top: 90px;
 }
 
 .card {
   box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
-  border-radius: 11px 11px 0px 0px;
-  margin: 15px;
-  width: 176px;
-  height: 163px;
+  margin-bottom: 15px;
 }
 
 .card-container {
@@ -215,7 +223,7 @@ video {
 }
 
 .screen {
-  height: 75vh;
+  height: 700px;
 }
 
 .story-container {
@@ -236,8 +244,8 @@ video {
   text-align: center;
   width: 324px;
   height: 394px;
-  margin: 60px;
-  margin-right: 0px;
+  margin-bottom: 120px;
+  margin-right: -12px;
 }
 
 .footer-box-info {
@@ -248,27 +256,26 @@ video {
 .footer-box-link {
   display: flex;
   justify-content: space-evenly;
-  margin: 60px 0px 25px -50px;
+  margin: 60px 0px 15px -60px;
 }
 
 .footer-link {
   margin-right: -50px;
 }
 
-@media (max-width: 720px) {
-  .card {
-    width: 176px;
-  }
+.phone-story {
+  margin: 0px -18px;
+}
 
-  .card-long {
-    height: 185;
-  }
+.card-content {
+  padding: 10px 8px;
+  padding-top: 0px;
+}
+
+@media (max-width: 720px) {
 }
 
 @media (max-width: 360px) {
-  .card {
-    padding-bottom: 50px;
-  }
 }
 
 /*

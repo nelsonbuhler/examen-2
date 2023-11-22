@@ -264,19 +264,6 @@ video {
   height: 70%;
 }
 
-.footer-box-container {
-  display: flex;
-}
-
-.footer-box-link {
-  align-self: end;
-  justify-self: end;
-}
-
-footer {
-  height: 37vh;
-}
-
 /*
 .cut-img {
   position: absolute;
@@ -387,6 +374,21 @@ footer {
 
   .desktop-disapear {
     display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  footer {
+    height: 37vh;
+  }
+
+  .footer-box-container {
+    display: flex;
+  }
+
+  .footer-box-link {
+    align-self: end;
+    justify-self: end;
   }
 }
 

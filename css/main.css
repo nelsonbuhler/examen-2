@@ -28,6 +28,34 @@
 // reset rules
 // ==================================== */
 
+@media (min-width: 720px) {
+  .screen {
+    height: 120vh;
+  }
+
+  .text {
+    font-size: 32px;
+  }
+
+  .desktop-disapear {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .phone-disapear {
+    display: none;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .screen {
+    height: 700px;
+  }
+}
+
 @font-face {
   font-family: "miama";
   src: url("../font/miama.woff2") format("woff2");
@@ -61,25 +89,6 @@ header {
   height: 100vh;
 }
 
-footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
-    url(../img/restaurant-footer-bg.jpg);
-  background-size: cover;
-  color: white;
-  padding: 20px;
-}
-
-footer .logo-footer {
-  padding: 20px;
-}
-
-footer a {
-  font-size: 17px;
-  font-weight: 500;
-  text-decoration: none;
-  margin: 15px 0px;
-}
-
 p {
   font-family: var(--font-family);
 }
@@ -102,11 +111,6 @@ a {
 hr {
   border: none;
   border-bottom: solid 1px var(--gold);
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 600;
 }
 
 img,
@@ -142,18 +146,57 @@ video {
   animation-timing-function: linear;
 }
 
-.phone-button {
-  margin-top: 215px;
-}
-
 .grey-bg {
   background-color: var(--gray);
+}
+
+@media (max-width: 720px) {
+  .title-box {
+    padding: 20px;
+  }
+
+  .title-box {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media (min-width: 720px) {
+  header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+      ),
+      url("../img/restaurant-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .title-box .title {
+    margin-top: 200px;
+    width: 805.512px;
+    height: 214.785px;
+  }
+
+  .italia {
+    width: 177px;
+    height: 177px;
+  }
+
+  h2 {
+    margin-top: 100px;
+    font-size: 60px;
+  }
 }
 
 .carte {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .carte-bg {
@@ -175,6 +218,37 @@ video {
   font-weight: 600;
 }
 
+@media (min-width: 720px) {
+  .carte .link {
+    font-size: 25px;
+  }
+  .cut-img-scd {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .carte-title {
+    margin-bottom: 120px;
+  }
+
+  .carte .link {
+    font-size: 18px;
+  }
+
+  .carte-bg {
+    background-color: rgba(255, 255, 255, 0.724);
+  }
+
+  .cut-img {
+    margin-top: -150px;
+  }
+
+  .cut-img-scd {
+    margin-top: -50px;
+  }
+}
+
 .special-space {
   padding-top: 90px;
 }
@@ -187,6 +261,59 @@ video {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 25px;
+}
+
+.card-content {
+  padding: 10px 8px;
+  padding-top: 0px;
+}
+
+@media (min-width: 1000px) {
+  .desktop-apear {
+    display: none;
+  }
+
+  .card-link-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    color: var(--gold);
+    margin: 30px 0px 15px 0px;
+  }
+
+  .card {
+    margin: 0px 25px;
+  }
+
+  .card img {
+    border-bottom: solid 1px var(--gold);
+    padding-bottom: 15px;
+  }
+
+  .card a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: solid 1px var(--gold);
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card .phone-disapear {
+    display: none;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .story-container {
@@ -207,11 +334,60 @@ video {
   margin-right: -12px;
 }
 
+.phone-story {
+  margin: 0px -18px;
+  margin-bottom: 15px;
+}
+
+.story-img {
+  margin-top: 100px;
+  height: 70%;
+}
+
 @media (min-width: 720px) {
   .story-link {
     width: auto;
     height: auto;
   }
+
+  .story-link a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: solid 1px var(--gold);
+    margin-top: 20px;
+  }
+
+  .story-link p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 720px) {
+  .story-link {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../img/castel.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%),
+    url(../img/restaurant-footer-bg.jpg);
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}
+
+footer .logo-footer {
+  padding: 20px;
+}
+
+footer a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 15px 0px;
 }
 
 .footer-box-info {
@@ -230,14 +406,19 @@ video {
   height: 25%;
 }
 
-.phone-story {
-  margin: 0px -18px;
-  margin-bottom: 15px;
-}
+@media (min-width: 720px) {
+  footer {
+    height: 37vh;
+  }
 
-.card-content {
-  padding: 10px 8px;
-  padding-top: 0px;
+  .footer-box-container {
+    display: flex;
+  }
+
+  .footer-box-link {
+    align-self: end;
+    justify-self: end;
+  }
 }
 
 .navigation a {
@@ -254,50 +435,16 @@ video {
   justify-content: end;
 }
 
+.phone-button {
+  margin-top: 215px;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
 }
 
-.story-img {
-  margin-top: 100px;
-  height: 70%;
-}
-
-/*
-.cut-img {
-  position: absolute;
-  top: 836px;
-  left: 103px;
-}
-*/
-
-@keyframes italia-mama {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @media (min-width: 720px) {
-  header {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.65) 0%,
-        rgba(0, 0, 0, 0.65) 100%
-      ),
-      url("../img/restaurant-bg.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .title-box .title {
-    margin-top: 200px;
-    width: 805.512px;
-    height: 214.785px;
-  }
-
   .button {
     color: white;
     font-size: 30px;
@@ -306,101 +453,9 @@ video {
     border-bottom: solid 1px var(--gold);
     text-decoration: none;
   }
-
-  .italia {
-    width: 177px;
-    height: 177px;
-  }
 }
 
 @media (min-width: 720px) {
-  .card {
-    margin: 0px 25px;
-  }
-
-  h2 {
-    margin-top: 100px;
-    font-size: 60px;
-  }
-
-  h3 {
-    color: var(--gold);
-    margin: 30px 0px 15px 0px;
-  }
-
-  .card img {
-    border-bottom: solid 1px var(--gold);
-    padding-bottom: 15px;
-  }
-
-  .card a {
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: solid 1px var(--gold);
-    margin-top: 40px;
-  }
-
-  .story-link a {
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: solid 1px var(--gold);
-    margin-top: 20px;
-  }
-
-  .story-link p {
-    margin-bottom: 50px;
-  }
-
-  .card-link-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .cut-img-scd {
-    margin-top: 30px;
-  }
-
-  .screen {
-    height: 120vh;
-  }
-
-  .text {
-    font-size: 32px;
-  }
-
-  .carte .link {
-    font-size: 25px;
-  }
-
-  .desktop-disapear {
-    display: none;
-  }
-}
-
-@media (min-width: 770px) {
-  footer {
-    height: 37vh;
-  }
-
-  .footer-box-container {
-    display: flex;
-  }
-
-  .footer-box-link {
-    align-self: end;
-    justify-self: end;
-  }
-}
-
-@media (max-width: 720px) {
-  .phone-disapear {
-    display: none;
-  }
-
-  .title-box {
-    padding: 20px;
-  }
-
   .button {
     display: flex;
     justify-content: center;
@@ -415,49 +470,13 @@ video {
     padding: 10px 30px;
     margin-top: 50px;
   }
-
-  .title-box {
-    background: rgba(0, 0, 0, 0.6);
-  }
 }
 
-@media (max-width: 720px) {
-  .carte-title {
-    margin-bottom: 120px;
+@keyframes italia-mama {
+  from {
+    transform: rotate(0deg);
   }
-
-  .text {
-    font-size: 18px;
-  }
-
-  .carte .link {
-    font-size: 18px;
-  }
-
-  .story-link {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/castel.jpg);
-    background-size: cover;
-    color: rgb(255, 255, 255);
-  }
-
-  .card {
-    box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
-  }
-
-  .screen {
-    height: 700px;
-  }
-
-  .cut-img {
-    margin-top: -150px;
-  }
-
-  .cut-img-scd {
-    margin-top: -50px;
-  }
-
-  .carte-bg {
-    background-color: rgba(255, 255, 255, 0.724);
+  to {
+    transform: rotate(360deg);
   }
 }

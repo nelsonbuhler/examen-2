@@ -1,5 +1,6 @@
 var burger = document.querySelector(".burger");
 var menu = document.querySelector(".menu");
+var titleburger = document.querySelector(".titleburger");
 
 var toggleMenu = function toggleMenu() {
   menu.classList.toggle("is-active");

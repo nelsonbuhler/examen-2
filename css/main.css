@@ -81,6 +81,81 @@ body {
   font-family: var(--font-family);
 }
 
+.burger {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 2;
+  width: 30px;
+  height: 19px;
+}
+
+.burger div {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 8px;
+  transition: transform 0.3s, opacity 0.3s, background-color 0s;
+}
+
+.burger div:nth-child(1) {
+  top: 0;
+}
+
+.burger div:nth-child(2) {
+  top: 8px;
+}
+
+.burger div:nth-child(3) {
+  top: 16px;
+}
+
+.burger.is-active div:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: black;
+}
+
+.burger.is-active div:nth-child(2) {
+  transform: translateX(100%);
+  opacity: 0;
+  background-color: black;
+}
+
+.burger.is-active div:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: black;
+}
+
+.titleburger .cls-4 {
+  fill: white;
+  position: absolute;
+  z-index: 3;
+  transition: background-color 0s;
+}
+
+.titleburger.menu.is-active {
+  fill: black;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 50px;
+  background: white;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: transform 0.3s ease-in;
+}
+
+.menu.is-active {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
 header {
   background-image: url("../img/restaurant-bg.jpg");
   background-size: cover;
@@ -139,6 +214,7 @@ video {
   width: 145.455px;
   height: 145.455px;
   position: relative;
+  z-index: 1;
   margin: 40px 20px;
   animation-name: italia-mama;
   animation-duration: 3s;
@@ -201,6 +277,7 @@ h3 {
 
 .carte-bg {
   position: relative;
+  z-index: 1;
   margin: 20px -35px;
   padding: 25px;
 }

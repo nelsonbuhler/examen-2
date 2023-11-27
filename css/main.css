@@ -247,6 +247,10 @@ h3 {
   .cut-img-scd {
     margin-top: -50px;
   }
+
+  .carte-container .screen {
+    height: auto;
+  }
 }
 
 .special-space {
@@ -368,6 +372,16 @@ h3 {
       url(../img/castel.jpg);
     background-size: cover;
     color: rgb(255, 255, 255);
+  }
+
+  .story .arrow {
+    padding: 0px 30px 0px 30px;
+  }
+
+  .phone-story {
+    margin-top: 40px;
+    margin-bottom: -30px;
+    padding: 0px 30px 0px 30px;
   }
 }
 

@@ -445,9 +445,22 @@ h3 {
 .story-img {
   margin-top: 100px;
   height: 70%;
+  object-fit: contain;
 }
 
-@media (min-width: 720px) {
+@media (max-width: 770px) {
+  .story-link p:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .story-link p:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
   .story-link {
     width: auto;
     height: auto;
@@ -465,7 +478,11 @@ h3 {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
+  .story .phone-disapear {
+    display: none;
+  }
+
   .story-link {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../img/castel.jpg);

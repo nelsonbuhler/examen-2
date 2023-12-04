@@ -53,11 +53,54 @@ body {
   font-family: var(--font-family);
 }
 
+.burger-menu a {
+  font-family: var(--font-family);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.burger-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.burger-navigation a {
+  font-size: 28px;
+  padding: 20px;
+  border-bottom: solid 1px var(--gold);
+}
+
+.top-nav {
+  border-top: solid 1px var(--gold);
+}
+
+.burger-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ededed;
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+.burger-contact a {
+  border-bottom: solid 1px var(--gold);
+  margin: 10px;
+}
+
+.burger-box-link {
+  display: flex;
+  justify-content: space-around;
+}
+
 .burger {
   position: fixed;
   top: 70px;
   right: 20px;
-  z-index: 2;
+  z-index: 1000;
   width: 30px;
   height: 19px;
 }
@@ -115,6 +158,7 @@ body {
 }
 
 .menu {
+  z-index: 100;
   position: fixed;
   top: 0;
   right: 0;
@@ -179,6 +223,7 @@ video {
 .title-box .title {
   width: 279px;
   height: 55px;
+  z-index: 110;
 }
 
 .title {

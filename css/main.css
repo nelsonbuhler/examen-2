@@ -109,7 +109,7 @@ body {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: white;
+  background: var(--gold);
   border-radius: 8px;
   transition: transform 0.3s, opacity 0.3s, background-color 0s;
 }
@@ -128,18 +128,15 @@ body {
 
 .burger.is-active div:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-  background-color: black;
 }
 
 .burger.is-active div:nth-child(2) {
   transform: translateX(100%);
   opacity: 0;
-  background-color: black;
 }
 
 .burger.is-active div:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-  background-color: black;
 }
 
 .titleburger .cls-4 {
@@ -150,10 +147,10 @@ body {
   fill: white;
   position: absolute;
   z-index: 3;
-  transition: background-color 0s;
+  transition: fill 0.5s;
 }
 
-.titleburger.menu.is-active {
+.titleburger.is-active .cls-4 {
   fill: black;
 }
 

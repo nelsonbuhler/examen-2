@@ -28,34 +28,6 @@
 // reset rules
 // ==================================== */
 
-@media (min-width: 720px) {
-  .screen {
-    height: 120vh;
-  }
-
-  .text {
-    font-size: 32px;
-  }
-
-  .desktop-disapear {
-    display: none;
-  }
-}
-
-@media (max-width: 720px) {
-  .phone-disapear {
-    display: none;
-  }
-
-  .text {
-    font-size: 18px;
-  }
-
-  .screen {
-    height: 700px;
-  }
-}
-
 @font-face {
   font-family: "miama";
   src: url("../font/miama.woff2") format("woff2");
@@ -150,7 +122,7 @@ body {
   left: 0;
   padding: 50px;
   background: white;
-  transform: translateX(100%);
+  transform: translateX(200%);
   pointer-events: none;
   transition: transform 0.3s ease-in;
 }
@@ -207,6 +179,10 @@ video {
 .title-box .title {
   width: 279px;
   height: 55px;
+}
+
+.title {
+  width: 50%;
 }
 
 .italia-box {
@@ -501,11 +477,7 @@ footer a {
   height: 25%;
 }
 
-@media (min-width: 720px) {
-  footer {
-    height: 37vh;
-  }
-
+@media (min-width: 770px) {
   .footer-box-container {
     display: flex;
   }
@@ -550,7 +522,7 @@ footer a {
   }
 }
 
-@media (min-width: 720px) {
+@media (max-width: 720px) {
   .button {
     display: flex;
     justify-content: center;
@@ -573,5 +545,33 @@ footer a {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 720px) {
+  .screen {
+    height: 120vh;
+  }
+
+  .text {
+    font-size: 32px;
+  }
+
+  .desktop-disapear {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .phone-disapear {
+    display: none;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .screen {
+    height: 700px;
   }
 }

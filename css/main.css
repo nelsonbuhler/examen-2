@@ -572,12 +572,18 @@ footer a {
 
 a:hover {
   color: var(--gold);
-  transition: color 0.3s;
+  border-bottom: none;
+  transform: scale(1.03);
+  transition: color 0.3s, transform 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .link:hover {
   color: var(--gold);
-  transition: color 0.3s;
+  transform: scale(1.03);
+  transition: color 0.3s, transform 0.2s;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
 }
 
 @media (min-width: 720px) {

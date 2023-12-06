@@ -570,6 +570,14 @@ footer a {
   justify-content: center;
 }
 
+a:hover {
+  color: var(--gold);
+}
+
+.link:hover {
+  color: var(--gold);
+}
+
 @media (min-width: 720px) {
   .button {
     color: white;
